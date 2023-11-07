@@ -5,9 +5,10 @@
  */
 package instrumentos.logic;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class TipoInstrumento {
+public class TipoInstrumento implements Serializable {
     String codigo;
     String nombre;
     String unidad;

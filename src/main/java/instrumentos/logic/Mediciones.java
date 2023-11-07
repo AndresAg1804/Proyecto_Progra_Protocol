@@ -1,8 +1,9 @@
 package instrumentos.logic;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Mediciones {
+public class Mediciones implements Serializable {
 
     String Medida;
 
