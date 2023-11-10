@@ -31,8 +31,10 @@ public class Protocol {
     public static final int SEARCHM=404;
     public static final int SEARCHMBC=405;
 
-    public static final int DELIVER=10;
-    public static final int DISCONNECT=11;
+    public static final int SYNC=10;
+    public static final int ASYNC=11;
+    public static final int DELIVER=12;
+    public static final int DISCONNECT=13;
     public static final int ERROR_NO_ERROR=0;
     public static final int ERROR_ERROR=1;
 }
