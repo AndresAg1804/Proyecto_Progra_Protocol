@@ -34,13 +34,11 @@ public class Instrumento implements Serializable {
 
     public Instrumento(String serie, String descripcion, int minimo, int maximo, int tolerancia, TipoInstrumento tipoInstrumento) {
         this.serie = serie;
-        //region Description
         this.descripcion = descripcion;
         this.minimo = minimo;
         this.maximo = maximo;
         this.tolerancia = tolerancia;
         this.tipo = tipoInstrumento;
-        //endregion
     }
 
     public int getMaximo() {

@@ -33,7 +33,6 @@ public class Calibraciones implements Serializable {
         this.fecha = fecha;
         this.mediciones = mediciones;
 
-        // Establece el valor de numero siempre en 0
         this.numero = String.valueOf(0);
 
         if (instrumento != null && mediciones != 0) {
@@ -42,14 +41,12 @@ public class Calibraciones implements Serializable {
             for (int i = 1; i < mediciones + 1; i++) {
                 if (i == 1) {
                     Mediciones med = new Mediciones();
-                   // med.setMedida(String.valueOf(1));
                     med.setReferencia("0");
                     med.setLectura(0);
                     med.setCalibraciones(this);
                     medicionesList.add(med);
                 } else {
                     Mediciones med = new Mediciones();
-                    //med.setMedida(String.valueOf(i));
                     med.setReferencia(String.valueOf(refValor2));
                     med.setLectura(0);
                     med.setCalibraciones(this);

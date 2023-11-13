@@ -19,10 +19,8 @@ public class TipoInstrumento implements Serializable {
 
     public TipoInstrumento(String codigo, String nombre, String unidad) {
         this.codigo = codigo;
-        //region Description
         this.nombre = nombre;
         this.unidad = unidad;
-        //endregion
     }
 
     public String getCodigo() {
